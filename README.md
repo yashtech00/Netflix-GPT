@@ -34,6 +34,10 @@
   - found out Tmdb CDN
   - made browse page amazing with tailwind css
   - usePopularMovies custom hook
+  - gpt search feature
+  - gpt search page
+  - gpt search bar
+  - (Bonus)multi-language Feature in our app
 
   
  

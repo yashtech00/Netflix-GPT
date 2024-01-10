@@ -7,7 +7,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { profileURL } from '../utils/constants';
+import { BgURl, profileURL } from '../utils/constants';
 
 
 const Login = () => {
@@ -74,7 +74,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img 
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BgURl}
           alt="logo" />
       </div>
       <form onClick={(e)=>e.preventDefault()} className="absolute w-[28rem] p-12 px-16 my-36 mx-auto right-0 left-0 bg-black text-white bg-opacity-90 rounded-lg">
