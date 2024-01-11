@@ -1,19 +1,20 @@
-import React from 'react'
-import GptSearchBar from './GptSearchBar'
-import GptMovieSuggestion from "./GptMovieSuggestion"
-import { BgURl } from '../utils/constants'
+import React from "react";
+import GptSearchBar from "./GptSearchBar";
+import GptMovieSuggestion from "./GptMovieSuggestion";
+import { BgURl } from "../utils/constants";
 
 const GptSearch = () => {
   return (
-      <div>
-          <div className="absolute ">
-        <img 
-          src={BgURl} />
+    <>
+    <div>
+      <div className="fixed -z-10 ">
+        <img className="h-screen object-cover w-screen" src={BgURl} alt="logo" />
       </div>
-          <GptSearchBar />
-          <GptMovieSuggestion/>
+      <GptSearchBar />
+      <GptMovieSuggestion />
       </div>
-  )
-}
+      </>
+  );
+};
 
-export default GptSearch
+export default GptSearch;
