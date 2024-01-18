@@ -6,10 +6,11 @@ import { BgURl } from "../utils/constants";
 const GptSearch = () => {
   return (
     <>
-    <div>
+    
       <div className="fixed -z-10 ">
         <img className="h-screen object-cover w-screen" src={BgURl} alt="logo" />
       </div>
+      <div className="">
       <GptSearchBar />
       <GptMovieSuggestion />
       </div>
